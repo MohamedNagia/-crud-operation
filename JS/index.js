@@ -36,12 +36,13 @@ function addBooks() {
 
 
     display()
-
+    clear()
     console.log("hhhhhhhhhhhhhhhhhhhhhhhhhh");
     nameInput.classList.add("is-valid")
     nameInput.classList.remove("is-invalid")
     urlInput.classList.add("is-valid")
     urlInput.classList.remove("is-invalid")
+
   } else {
     console.log("aaaaaaaaaaaaaaaaaaaaaaaaa");
     modal.classList.replace("d-none", "d-block")
@@ -94,4 +95,10 @@ function closeModal() {
 
   modal.classList.add("d-none")
 
+}
+
+function clear() {
+
+  nameInput.value = null
+  urlInput.value = null
 }
